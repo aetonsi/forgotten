@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "msg * asd": {
+      "commandName": "Project",
+      "commandLineArgs": "msg /v /w * ASD"
+    },
+    "--dont-wait msg * asd": {
+      "commandName": "Project",
+      "commandLineArgs": "--dont-wait msg /v /w * ASD"
+    },
+    "sleep+errorlevel DONT WAIT": {
+      "commandName": "Project",
+      "commandLineArgs": "--dont-wait php -r \"sleep(3);exit(rand(1,255));\""
+    },
+    "sleep+errorlevel": {
+      "commandName": "Project",
+      "commandLineArgs": "php -r \"sleep(3);exit(rand(1,255));\""
+    }
+  }
+}
